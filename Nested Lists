@@ -1,0 +1,17 @@
+n=int(input())
+res=[]
+grade=[]
+for i in range(n):
+    name=input()
+    score=float(input())
+    res.append([name,score])
+    grade.append(score)
+grade=sorted(set(grade))
+second_max=grade[1]
+name=[]
+for slist in res:
+    if second_max==slist[1]:
+        name.append(slist[0])
+name.sort()
+for nm in name:
+    print(nm)
