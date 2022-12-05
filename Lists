@@ -1,0 +1,19 @@
+n=int(input())
+lst=[]
+for _ in range(n):
+    code=input().split(" ")
+    inst=code[0].strip()
+    if inst == "insert":
+        lst.insert(int(code[1]),int(code[2]))
+    elif inst == "print":
+        print(lst)
+    elif inst == "remove":
+        lst.remove(int(code[1]))
+    elif inst == "append":
+        lst.append(int(code[1]))
+    elif inst == "sort":
+        lst.sort()
+    elif inst == "pop":
+        lst.pop()
+    elif inst == "reverse":
+        lst.reverse()
