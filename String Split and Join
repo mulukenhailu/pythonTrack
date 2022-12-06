@@ -1,0 +1,8 @@
+def split_and_join(line):
+    word=[]
+    for char in line:
+        if char==' ':
+            word.append("-")
+        else:
+            word.append(char)
+    return "".join(word)
