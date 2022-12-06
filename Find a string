@@ -1,0 +1,11 @@
+def count_substring(string, sub_string):
+    cut=len(sub_string)
+    num=len(string)-len(sub_string)+1
+    lst=[]
+    counter=0
+    for i in range(0,num):
+        lst.append(string[i:cut+i])
+    for lett in lst:
+        if lett==sub_string:
+            counter+=1
+    return counter
