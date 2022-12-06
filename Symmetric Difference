@@ -1,0 +1,10 @@
+fir=input()
+sec=input()
+thi=input()
+fou=input()
+sec=set(map(int,sec.split()))
+fou=set(map(int,fou.split()))
+result=list((sec.union(fou)).difference((sec.intersection(fou))))
+result.sort()
+for num in result:
+    print(num)
