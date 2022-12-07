@@ -1,0 +1,16 @@
+n = int(input())
+s =set((map(int, input().split())))
+m =int(input())
+sum=0
+for i in range(m):
+    command=input()
+    instruction=command.split(" ")
+    if instruction[0]=="pop":
+        s.pop() 
+    if instruction[0]=="remove":
+        s.remove(int(instruction[1]))
+    if instruction[0]=="discard":
+        s.discard(int(instruction[1]))
+for num in s:
+    sum+=num
+print(sum)
