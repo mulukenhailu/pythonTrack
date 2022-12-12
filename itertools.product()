@@ -1,0 +1,6 @@
+from itertools import product
+seta=list(map(int,input().split(" ")))
+setb=list(map(int,input().split(" ")))
+res=list(product(seta,setb))
+res2=" ".join(str(tup) for tup in res)
+print(res2)
