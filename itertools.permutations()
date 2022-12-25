@@ -1,0 +1,7 @@
+from itertools import permutations
+lst=input().split(" ")
+permu=list(permutations(lst[0],int(lst[1])))
+newpermu=list("".join(pair) for pair in permu)
+newpermu.sort()
+for item in newpermu:
+    print(item)
